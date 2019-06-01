@@ -1,0 +1,8 @@
+- name: pull centos image
+  hosts: target
+  remote_user: ansible
+  become: true
+  tasks:
+  - name: pull
+    docker_image:
+       name: centos

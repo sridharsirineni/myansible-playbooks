@@ -1,0 +1,7 @@
+- name: validator
+  hosts: controller
+  connection: local
+  tasks:
+  - name: validate docker container
+    uri: http://192.168.56.66:8080
+    return_content: yes

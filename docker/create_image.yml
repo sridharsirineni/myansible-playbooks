@@ -1,0 +1,7 @@
+- name: create webserver image
+  hosts: target
+  tasks:
+  - name: build image
+    docker_image:
+       path: /home/ansible/docker
+       name: webimage
